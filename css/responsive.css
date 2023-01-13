@@ -1,0 +1,94 @@
+/* * Navigation Section */
+@media only screen and (max-width: 902px) {
+    ul .item a {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 654px) {
+    ul {
+        flex-wrap: wrap;
+    }
+}
+
+/* * Home Section */
+@media only screen and (max-width: 1307px) {
+    .home .h-primary {
+        font-size: 4.75rem;
+    }
+}
+
+@media only screen and (max-width: 1263px) {
+    .home .h-primary {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+    .home .h-primary {
+        font-size: 3rem;
+    }
+
+    .home {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 902px) {
+    .home {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home .h-primary {
+        font-size: 2.5rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+}
+
+/* * Services Section */
+@media only screen and (max-width: 1238px) {
+    .services {
+        background-color: blue;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 534px) {
+    .services {
+        background-color: blue;
+        flex-wrap: wrap;
+        margin: 1vh 1vh;
+        padding: 10px auto;
+    }
+
+    .box {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        /* width: 99%;
+        height: 550px; */
+    }
+}
+
+/* * Contact Section */
+@media only screen and (max-width: 1238px) {
+    .contact {
+        margin: 60vh auto 0vh;
+    }
+}
+
+@media only screen and (max-width: 963px) {
+    .contact {
+        margin: 131vh auto 0vh;
+    }
+}

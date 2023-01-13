@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar-height: 125px;
+}
+
+body {
+    font-family: 'Rock Salt', cursive;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    opacity: 0.9;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    font-family: 'Kaushan Script', cursive !important;
+    align-items: center;
+    height: var(--navbar-height);
+    position: relative;
+}
+
+.logo {
+    margin: 0px 10px;
+}
+
+.logo img {
+    width: 100px;
+    margin: 10px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 67vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rock Salt', cursive;
+}
+
+.home:hover {
+    background-color: pink;
+}
+
+.h-primary {
+    font-size: 5rem;
+    padding: 12px;
+    color: black;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 2.5;
+}
+
+.highlight-container,
+.highlight {
+    position: relative;
+}
+
+.highlight-container {
+    display: inline-block;
+}
+
+.highlight-container:before {
+    content: " ";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: #ffd500;
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 20% 25% 20% 24%;
+    padding: 10px 3px 3px 10px;
+}
+
+.home p {
+    font-size: 1.25rem;
+    line-height: 2.5;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 8vh;
+    transition: background-color 0.75s;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 3rem;
+    padding: 12px;
+    color: black;
+}
+
+.services-section {
+    margin-top: 25vh;
+    height: 100vh;
+}
+
+.services {
+    margin: 5vh 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .box {
+    border: 2px solid brown;
+    margin: 1vh 0.75vh;
+    padding: 10px 25px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+.box img {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.services .h-tertiary {
+    margin: 3vh 1vw;
+}
+
+.services p {
+    margin: 3vh 1vw;
+}
+
+/* .services h1.h-secondary, .contact h1.h-secondary {
+    font-size: 2rem;
+} */
+
+/* .client-section::before {
+    content: "";
+    position: absolute;
+    background: url("../img/contact.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.client-section {
+    height: 50vh;
+    border: 2px solid red;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients img {
+    height: 125px;
+}
+
+.client-item {
+    padding: 34px;
+} */
+
+.contact::before {
+    content: "";
+    position: absolute;
+    background: url("../img/contact.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.contact {
+    position: relative;
+    height: 100vh;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact-box form {
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border: 2px solid black;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input {
+    width: 50%;
+    height: 4.5vh;
+    border-radius: 9px;
+    border: 2px solid black;
+    margin-left: 0px;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+.h-tertiary {
+    font-size: 2rem;
+    color: black;
+}
+
+.submit {
+    padding: 6px 20px;
+    margin: 17px;
+    background-color: brown;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.75s;
+}
+
+.submit:hover {
+    background-color: black;
+}
